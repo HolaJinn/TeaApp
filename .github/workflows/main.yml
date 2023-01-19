@@ -71,7 +71,7 @@ jobs:
           ### This command works ###
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -w . -a testbar.bar -o build/TeaApp/gen/TeaRESTApplication.msgflow -k build/TeaApp
 
-          ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path build/TeaApp/ --output-bar-file ./testbar.bar
+          ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path build/TeaApp/gen/ --output-bar-file ./testbar.bar
           pwd
           ls -al
           cat testbar.bar
