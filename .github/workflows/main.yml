@@ -74,7 +74,7 @@ jobs:
 
           ls -al ./build
 
-          ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./build/TeaApp/ --output-bar-file ./testbar.bar --do-not-compile-java
+          ./ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./build/TeaApp/ --output-bar-file ./testbar.bar --do-not-compile-java
           pwd
           ls -al
           echo "listing"
