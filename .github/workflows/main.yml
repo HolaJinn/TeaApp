@@ -62,21 +62,21 @@ jobs:
           export MQSI_WORKPATH=$PWD/ace-minimal-image-unzip/var/mqsi
           . ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsiprofile
           mqsilist
+     
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -data $GITHUB_WORKSPACE/ace-projects -b $GITHUB_WORKSPACE/bar-files -a
           #ls -al ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./Test.App --compile-maps-and-schemas --project --overrides-file ./Test.App/properties/DEV.properties --output-bar-file ./testbar.bar
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsicreatebar -data ./Test.App -b testbar.bar
 
           ### This command works ###
-          #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -w . -a testbar.bar -o ./build/Test.App/Test_Flow.msgflow
+          ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -w . -a testbar.bar -o build/TeaApp/gen/TeaRESTApplication.msgflow -k build/TeaApp
 
-          ls -al ./build/TeaApp
-
-          ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./build/TeaApp/ --output-bar-file ./testbar.bar --do-not-compile-java
+          #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./build/TeaApp/ --output-bar-file ./testbar.bar
           pwd
           ls -al
-          echo "listing"
-          ls -al ./build/TeaApp
+          cat testbar.bar
+          #echo "listing"
+          #ls -al ./build/TeaApp
           #ls -al $MQSI_WORKPATH
       # Runs a set of commands using the runners shell
       #- name: Build/UT for ACE projects
