@@ -62,8 +62,7 @@ jobs:
           export MQSI_WORKPATH=$PWD/ace-minimal-image-unzip/var/mqsi
           . ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsiprofile
           mqsilist
-      - name: Build Bar File
-        run: |
+     
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -data $GITHUB_WORKSPACE/ace-projects -b $GITHUB_WORKSPACE/bar-files -a
           #ls -al ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./Test.App --compile-maps-and-schemas --project --overrides-file ./Test.App/properties/DEV.properties --output-bar-file ./testbar.bar
