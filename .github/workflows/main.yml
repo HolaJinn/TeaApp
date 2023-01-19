@@ -73,7 +73,9 @@ jobs:
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -w . -a testbar.bar -o ./build/Test.App/Test_Flow.msgflow
           
           pwd
-          ls -al 
+          ls -al ./ace-minimal-image-unzip
+          
+          ls -al ./ace-minimal-image-unzip/opt/ibm/ace-12/server/bin
 
           #./ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./build/TeaApp/ --output-bar-file ./testbar.bar --do-not-compile-java
           pwd
